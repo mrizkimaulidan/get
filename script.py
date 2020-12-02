@@ -3,9 +3,12 @@ import os
 
 
 def ask():
+    cls()
     menu = int(
         input('1. Download file\n2. Delete file (by size)\n99. EXIT\n\nYour choose: '))
     if menu == 1:
+        cls()
+        print('=== Download File ===')
         url = input('URL (with protocol): ')
         max_number = int(input('Max number 1-999: '))
         file_extension = input('File extension (.pdf, .html): ')
@@ -14,10 +17,13 @@ def ask():
         download_file(url, max_number, file_extension,
                       file_name, file_location)
     elif menu == 2:
+        cls()
+        print('=== Delete File By Size ===')
         directory = input('Directory: ')
         file_size = int(input('File size (bytes): '))
         delete_file(directory, file_size)
     elif menu == 99:
+        cls()
         print('program exited')
         exit
 
@@ -26,6 +32,7 @@ def download_file(url, max_number, file_extension, file_name, file_location):
     os.mkdir(file_location)
     for i in range(1, max_number + 1):
         site = url + str(i)
+        print('\n\nDownloaded ' + str(i))
         wget.download(
             site, file_location + file_name + '-' + str(i) + file_extension)
 
@@ -39,5 +46,8 @@ def delete_file(directory, file_size):
             print('Deleted file more than ' +
                   str(file_size) + ' bytes: ' + i.name)
 
+
+def cls():
+    os.system('cls')
 
 ask()
