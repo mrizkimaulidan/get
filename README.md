@@ -1,27 +1,23 @@
 # Getfilez
 
-Tools pribadi untuk download file dari website mengunakan wget berdasarkan looping ID dari konten website tersebut. Biasanya untuk download file yang banyak dan memiliki ID yang auto increment
+Personal tools for downloading files from websites using wget based on the looping ID of the website content. Usually for downloading a lot of files and having an auto increment ID.
 
 ### Prerequisites
 
-Berikut beberapa hal yang perlu diinstal terlebih dahulu:
+Here are a few things that need to be installed first:
 
 - Python 3.5.x
 
 ### Installing
 
-Instal module yang dibutuhkan
+Install the required modules.
 
 ```
 pip install -r requirements.txt
 ```
 
-Jalankan program
+Run the program
 
 ```
 python script.py
 ```
-
-### Preview
-
-Youtube: https://youtu.be/vFWua5tg0Dw
