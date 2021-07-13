@@ -1,6 +1,6 @@
 # get
 
-Personal tools for downloading files from websites using wget based on the looping ID of the website content. Usually for downloading a lot of files and having an auto increment ID.
+Personal tool for downloading files from websites using wget based on the looping ID of the website content. Usually for downloading a lot of files and having an auto increment ID.
 
 ### Prerequisites
 
