@@ -10,7 +10,7 @@ def ask():
         max_number = int(input('Max number 1-999: '))
         file_extension = input('File extension (.pdf, .html): ')
         file_name = input('File name: ')
-        file_location = input('File location: ')
+        file_location = input('File location (full path): ')
         download_file(url, max_number, file_extension,
                       file_name, file_location)
     elif menu == 2:
