@@ -13,11 +13,11 @@ Here are a few things that need to be installed first:
 Install the required modules.
 
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Run the program
 
 ```
-python script.py
+$ python script.py
 ```
