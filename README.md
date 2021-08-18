@@ -12,12 +12,12 @@ Here are a few things that need to be installed first:
 
 Install the required modules.
 
-```
+```bash
 $ pip install -r requirements.txt
 ```
 
 Run the program
 
-```
+```bash
 $ python script.py
 ```
